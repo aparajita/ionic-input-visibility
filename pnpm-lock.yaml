@@ -1,12 +1,14 @@
 dependencies:
-  '@capacitor/core': 2.4.2
-  '@ionic/core': 5.4.4
+  '@capacitor/core': 2.4.3
+  '@ionic/core': 5.5.0
+  animated-scroll-to: 2.0.12
 devDependencies:
-  '@ionic/prettier-config': 1.0.1_prettier@2.1.2
-  prettier: 2.1.2
+  '@ionic/prettier-config': 1.0.1_prettier@2.2.0
+  '@types/moveto': 1.8.0
+  prettier: 2.2.0
   rimraf: 3.0.2
   standard-version: 9.0.0
-  typescript: 4.0.5
+  typescript: 4.1.2
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -27,22 +29,22 @@ packages:
     dev: true
     resolution:
       integrity: sha512-i6rgnR/YgPEQzZZnbTHHuZdlE8qyoBNalD6F+q4vAFlcMEcqmkoG+mPqJYJCo63qPf74+Y1UZsl3l6f7/RIkmA==
-  /@capacitor/core/2.4.2:
+  /@capacitor/core/2.4.3:
     dependencies:
       tslib: 1.14.1
     dev: false
     resolution:
-      integrity: sha512-xQyJSZo50+aAvX3ZsX5h2xJDjz1LQxGT0A6/qD1pqJVEUeDhzdfYMbxCPWbmqSONZXddHtwrTiIsjq1Wd+ukuQ==
-  /@ionic/core/5.4.4:
+      integrity: sha512-AaLhXryFK65OvfS9zuw3qw6gVbNjeHoIAzvhrzcI0OWJo6Qi8gOIz4rraD35UKSETkRm+H7auhSTAj6Avy5lHQ==
+  /@ionic/core/5.5.0:
     dependencies:
       ionicons: 5.2.3
       tslib: 1.14.1
     dev: false
     resolution:
-      integrity: sha512-MSA3LJJmOR8S8XDTsHCrnq+nCUmuvgZDTZzrrulpPdyTHNbphhJYw991JfTzFKRfQDQKs+6+xJAovLBaiYyszA==
-  /@ionic/prettier-config/1.0.1_prettier@2.1.2:
+      integrity: sha512-LHKRQ4kmJN6Z9aqbYajYIQi3CFULjO/UI16frMu2Oc4rx8uewMNPBClAR5Dhy/jSkL3MiIOiuQzLPO4Kyd/zzw==
+  /@ionic/prettier-config/1.0.1_prettier@2.2.0:
     dependencies:
-      prettier: 2.1.2
+      prettier: 2.2.0
     dev: true
     peerDependencies:
       prettier: ^2.0.0
@@ -52,6 +54,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
+  /@types/moveto/1.8.0:
+    dev: true
+    resolution:
+      integrity: sha512-fRnUYGPc6GeQyOqtenXBOF0WDEjdPBf2HJfUyMESGfBR/gfLZSckA3J4V+/QI7TySl1l1HNkbXwXqwq4u/n9AA==
+  /@types/node/14.14.10:
+    dev: false
+    resolution:
+      integrity: sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
   /@types/normalize-package-data/2.4.0:
     dev: true
     resolution:
@@ -68,6 +78,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=
+  /animated-scroll-to/2.0.12:
+    dependencies:
+      '@types/node': 14.14.10
+    dev: false
+    resolution:
+      integrity: sha512-08TlNWa0Os38ShzScfrlV7c4w3QCZWUG+jhrx2ojMmI8apR8o3C1RwLxEaSKyu8RmcJvU89z3HcKObbAdHMHGQ==
   /ansi-regex/5.0.0:
     dev: true
     engines:
@@ -643,7 +659,7 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.11.5
+      uglify-js: 3.12.0
     resolution:
       integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /hard-rejection/2.1.0:
@@ -976,7 +992,7 @@ packages:
       read-pkg-up: 7.0.1
       redent: 3.0.0
       trim-newlines: 3.0.0
-      type-fest: 0.18.0
+      type-fest: 0.18.1
       yargs-parser: 20.2.4
     dev: true
     engines:
@@ -1230,13 +1246,13 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
-  /prettier/2.1.2:
+  /prettier/2.2.0:
     dev: true
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
+      integrity: sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -1651,12 +1667,12 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==
-  /type-fest/0.18.0:
+  /type-fest/0.18.1:
     dev: true
     engines:
       node: '>=10'
     resolution:
-      integrity: sha512-fbDukFPnJBdn2eZ3RR+5mK2slHLFd6gYHY7jna1KWWy4Yr4XysHuCdXRzy+RiG/HwG4WJat00vdC2UHky5eKiQ==
+      integrity: sha512-OIAYXk8+ISY+qTOwkHtKqzAuxchoMiD9Udx+FSGQDuiRR+PJKJHc2NJAXlbhkGwTt/4/nKZxELY1w3ReWOL8mw==
   /type-fest/0.6.0:
     dev: true
     engines:
@@ -1673,21 +1689,21 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/4.0.5:
+  /typescript/4.1.2:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-ywmr/VrTVCmNTJ6iV2LwIrfG1P+lv6luD8sUJs+2eI9NLGigaN+nUQc13iHqisq7bra9lnmUSYqbJvegraBOPQ==
-  /uglify-js/3.11.5:
+      integrity: sha512-thGloWsGH3SOxv1SoY7QojKi0tc+8FnOmiarEGMbd/lar7QOEd3hvlx3Fp5y6FlDUGl9L+pd4n2e+oToGMmhRQ==
+  /uglify-js/3.12.0:
     dev: true
     engines:
       node: '>=0.8.0'
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-btvv/baMqe7HxP7zJSF7Uc16h1mSfuuSplT0/qdjxseesDU+yYzH33eHBH+eMdeRXwujXspaCTooWHQVVBh09w==
+      integrity: sha512-8lBMSkFZuAK7gGF8LswsXmir8eX8d2AAMOnxSDWjKBx/fBR6MypQjs78m6ML9zQVp1/hD4TBdfeMZMC7nW1TAA==
   /util-deprecate/1.0.2:
     dev: true
     resolution:
@@ -1769,10 +1785,12 @@ packages:
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
 specifiers:
-  '@capacitor/core': ^2.4.2
-  '@ionic/core': ^5.4.4
+  '@capacitor/core': ^2.4.3
+  '@ionic/core': ^5.5.0
   '@ionic/prettier-config': ^1.0.1
-  prettier: ^2.1.2
+  '@types/moveto': ^1.8.0
+  animated-scroll-to: ^2.0.12
+  prettier: ^2.2.0
   rimraf: ^3.0.2
   standard-version: ^9.0.0
-  typescript: ^4.0.5
+  typescript: ^4.1.2
