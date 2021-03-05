@@ -1,5 +1,5 @@
 {
-  "name": "ws-capacitor-input-visibility",
+  "name": "@aparajita/ionic-input-visibility",
   "version": "1.0.0",
   "description": "Ensures keyboard-focusable input fields remain visible when the keyboard opens",
   "main": "dist/esm/index.js",
