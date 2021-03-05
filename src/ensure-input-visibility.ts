@@ -130,7 +130,9 @@ function keyboardWillShow(info: KeyboardInfo) {
 
 function keyboardDidHide() {
   // On Android, the focused element is not blurring as it should
-  adjustedElement.blur()
+  if (adjustedElement) {
+    adjustedElement.blur()
+  }
 
   keyboardHeight = 0
   adjustedElement = null
